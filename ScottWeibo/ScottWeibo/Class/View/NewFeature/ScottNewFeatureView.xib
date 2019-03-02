@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScottNewFeatureView" customModule="ScottWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gq3-H3-fFA">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </scrollView>
+                <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-mk-I0w">
+                    <rect key="frame" x="135" y="451" width="105" height="36"/>
+                    <color key="backgroundColor" red="1" green="0.47843137250000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="D77-yV-CUi"/>
+                        <constraint firstAttribute="width" constant="105" id="tWO-tm-Y0l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="点击进入"/>
+                    <connections>
+                        <action selector="joinBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="yTN-9V-rTo"/>
+                    </connections>
+                </button>
+                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="4" translatesAutoresizingMaskIntoConstraints="NO" id="x0i-Zd-ngC">
+                    <rect key="frame" x="160" y="497" width="55" height="37"/>
+                    <color key="pageIndicatorTintColor" red="0.078431372550000003" green="0.078431372550000003" blue="0.078431372550000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <color key="currentPageIndicatorTintColor" red="1" green="0.47843137250000001" blue="0.1215686275" alpha="1" colorSpace="calibratedRGB"/>
+                </pageControl>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gq3-H3-fFA" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="2BX-Yr-gC5"/>
+                <constraint firstAttribute="trailing" secondItem="gq3-H3-fFA" secondAttribute="trailing" id="4YM-VC-gSQ"/>
+                <constraint firstItem="x0i-Zd-ngC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Ilm-IK-zKL"/>
+                <constraint firstAttribute="bottom" secondItem="Hjv-mk-I0w" secondAttribute="bottom" constant="180" id="SI6-8N-pwv"/>
+                <constraint firstAttribute="bottom" secondItem="gq3-H3-fFA" secondAttribute="bottom" id="Ull-Hp-T6h"/>
+                <constraint firstItem="x0i-Zd-ngC" firstAttribute="top" secondItem="Hjv-mk-I0w" secondAttribute="bottom" constant="10" id="bXX-Xj-QGn"/>
+                <constraint firstItem="gq3-H3-fFA" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jZw-kl-wg8"/>
+                <constraint firstItem="Hjv-mk-I0w" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="mOI-cL-9zb"/>
+            </constraints>
+            <connections>
+                <outlet property="joinBtn" destination="Hjv-mk-I0w" id="OoA-bc-xUh"/>
+                <outlet property="pageCtrl" destination="x0i-Zd-ngC" id="1Rr-pH-1ZE"/>
+                <outlet property="scrollView" destination="gq3-H3-fFA" id="J3f-Dg-7qc"/>
+            </connections>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

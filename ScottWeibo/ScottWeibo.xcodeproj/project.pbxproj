@@ -1,0 +1,870 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2202CE901E270D1D00203366 /* ScottVisitorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE8F1E270D1D00203366 /* ScottVisitorView.swift */; };
+		2202CE951E27332900203366 /* ScottConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE941E27332900203366 /* ScottConst.swift */; };
+		2202CE971E274CA800203366 /* ScottOAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE961E274CA800203366 /* ScottOAuthViewController.swift */; };
+		2202CE991E2753FC00203366 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 2202CE981E2753FC00203366 /* main.json */; };
+		2202CE9C1E276EB500203366 /* ScottNetwrokManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE9B1E276EB500203366 /* ScottNetwrokManager.swift */; };
+		2202CE9E1E2777D900203366 /* ScottNetwrokManager+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE9D1E2777D900203366 /* ScottNetwrokManager+Extension.swift */; };
+		2202CEA01E27875600203366 /* ScottStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2202CE9F1E27875600203366 /* ScottStatus.swift */; };
+		22226AC11E360B920098FFBB /* ScottEmoticonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22226ABF1E360B920098FFBB /* ScottEmoticonCell.swift */; };
+		22226AC21E360B920098FFBB /* ScottEmoticonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22226AC01E360B920098FFBB /* ScottEmoticonLayout.swift */; };
+		2263BB291E25DDB000F1236D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB281E25DDB000F1236D /* AppDelegate.swift */; };
+		2263BB3D1E25DE4E00F1236D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2263BB3C1E25DE4E00F1236D /* Assets.xcassets */; };
+		2263BB4B1E25DFFC00F1236D /* ScottTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB4A1E25DFFC00F1236D /* ScottTabBarController.swift */; };
+		2263BB4D1E25E00F00F1236D /* ScottNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB4C1E25E00F00F1236D /* ScottNavigationController.swift */; };
+		2263BB4F1E25E02500F1236D /* ScottBaseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB4E1E25E02500F1236D /* ScottBaseController.swift */; };
+		2263BB511E25E04000F1236D /* ScottDiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB501E25E04000F1236D /* ScottDiscoverController.swift */; };
+		2263BB531E25E04D00F1236D /* ScottHomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB521E25E04D00F1236D /* ScottHomeController.swift */; };
+		2263BB551E25E05900F1236D /* ScottMessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB541E25E05900F1236D /* ScottMessageController.swift */; };
+		2263BB571E25E06800F1236D /* ScottProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB561E25E06800F1236D /* ScottProfileController.swift */; };
+		2263BB5C1E25FBF500F1236D /* Bundle+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB5B1E25FBF500F1236D /* Bundle+Extensions.swift */; };
+		2263BB871E26130300F1236D /* UIButton+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB6E1E26130300F1236D /* UIButton+ScottExtension.m */; };
+		2263BB881E26130300F1236D /* UIColor+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB701E26130300F1236D /* UIColor+ScottExtension.m */; };
+		2263BB8A1E26130300F1236D /* UIImage+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB741E26130300F1236D /* UIImage+ScottExtension.m */; };
+		2263BB8C1E26130300F1236D /* UILabel+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB781E26130300F1236D /* UILabel+ScottExtension.m */; };
+		2263BB8E1E26130300F1236D /* UIView+ScottFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB7C1E26130300F1236D /* UIView+ScottFrame.m */; };
+		2263BB971E262F5900F1236D /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB961E262F5900F1236D /* UIBarButtonItem+Extension.swift */; };
+		2263BB991E26342400F1236D /* ScottTestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2263BB981E26342400F1236D /* ScottTestController.swift */; };
+		2265EAB21E35FB000069A4A5 /* ScottEmoticonInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265EAAF1E35FB000069A4A5 /* ScottEmoticonInputView.swift */; };
+		2265EAB31E35FB000069A4A5 /* ScottEmoticonInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2265EAB01E35FB000069A4A5 /* ScottEmoticonInputView.xib */; };
+		2265EAB41E35FB000069A4A5 /* ScottEmoticonToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2265EAB11E35FB000069A4A5 /* ScottEmoticonToolBar.swift */; };
+		228FC1DC1E34482100147D97 /* ScottEmoticon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FC1D81E34482100147D97 /* ScottEmoticon.swift */; };
+		228FC1DD1E34482100147D97 /* ScottEmoticonPackage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FC1D91E34482100147D97 /* ScottEmoticonPackage.swift */; };
+		228FC1DE1E34482100147D97 /* ScottEmoticon.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 228FC1DA1E34482100147D97 /* ScottEmoticon.bundle */; };
+		228FC1DF1E34482100147D97 /* ScottEmoticonManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FC1DB1E34482100147D97 /* ScottEmoticonManager.swift */; };
+		228FC1E21E34588600147D97 /* ScottLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FC1E11E34588600147D97 /* ScottLabel.swift */; };
+		228FC1E71E3493AA00147D97 /* ScottWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 228FC1E61E3493AA00147D97 /* ScottWebViewController.swift */; };
+		2295F7411E2F0159009ADC61 /* ScottComposeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295F73F1E2F0159009ADC61 /* ScottComposeController.swift */; };
+		2295F7421E2F0159009ADC61 /* ScottComposeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2295F7401E2F0159009ADC61 /* ScottComposeController.xib */; };
+		2295F7481E2F01C4009ADC61 /* ScottComposeTypeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295F7441E2F01C4009ADC61 /* ScottComposeTypeButton.swift */; };
+		2295F7491E2F01C4009ADC61 /* ScottComposeTypeButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2295F7451E2F01C4009ADC61 /* ScottComposeTypeButton.xib */; };
+		2295F74A1E2F01C4009ADC61 /* ScottComposeTypeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295F7461E2F01C4009ADC61 /* ScottComposeTypeView.swift */; };
+		2295F74B1E2F01C4009ADC61 /* ScottComposeTypeView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2295F7471E2F01C4009ADC61 /* ScottComposeTypeView.xib */; };
+		2295F74D1E2F1136009ADC61 /* ScottComposeTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2295F74C1E2F1136009ADC61 /* ScottComposeTextView.swift */; };
+		22966BBB1E2DBAF8003403D2 /* ScottRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22966BB91E2DBAF8003403D2 /* ScottRefreshView.swift */; };
+		22966BBC1E2DBAF8003403D2 /* ScottRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22966BBA1E2DBAF8003403D2 /* ScottRefreshView.xib */; };
+		22966BD01E2DBF85003403D2 /* ScottCTRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22966BCF1E2DBF85003403D2 /* ScottCTRefreshView.swift */; };
+		22966BD21E2DBF8E003403D2 /* ScottCTRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22966BD11E2DBF8E003403D2 /* ScottCTRefreshView.xib */; };
+		22A6CCAC1E2C60B500880566 /* ScottRetweetStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A6CCAB1E2C60B500880566 /* ScottRetweetStatusCell.xib */; };
+		22B03FEC1E30B5E7001E33C4 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B03FEB1E30B5E7001E33C4 /* Date+Extensions.swift */; };
+		22B03FEE1E30C85C001E33C4 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B03FED1E30C85C001E33C4 /* String+Extensions.swift */; };
+		22B663311E28605000A33580 /* ScottUserAccount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B663301E28605000A33580 /* ScottUserAccount.swift */; };
+		22B663341E2865B500A33580 /* NSString+ScottPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 22B663331E2865B500A33580 /* NSString+ScottPath.m */; };
+		22B663361E28757900A33580 /* ScottNewFeatureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B663351E28757900A33580 /* ScottNewFeatureView.swift */; };
+		22B663381E28758900A33580 /* ScottNewFeatureView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B663371E28758900A33580 /* ScottNewFeatureView.xib */; };
+		22B6633A1E28759D00A33580 /* ScottWelcomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B663391E28759D00A33580 /* ScottWelcomView.swift */; };
+		22B6633C1E2875A900A33580 /* ScottWelcomView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B6633B1E2875A900A33580 /* ScottWelcomView.xib */; };
+		22B6633E1E28818100A33580 /* ScottStatusListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B6633D1E28818100A33580 /* ScottStatusListViewModel.swift */; };
+		22B663421E28C55D00A33580 /* ScottTitleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B663411E28C55D00A33580 /* ScottTitleButton.swift */; };
+		22E152A91E2CBE37004E0042 /* ScottRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22E152A81E2CBE37004E0042 /* ScottRefreshControl.swift */; };
+		3137A1581A57F0BC35C3282F /* Pods_ScottWeibo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2039317833682ECF0E925BEF /* Pods_ScottWeibo.framework */; };
+		670843841E2B419100C12C60 /* ScottStatusCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843831E2B419100C12C60 /* ScottStatusCell.swift */; };
+		670843861E2B41A600C12C60 /* ScottOriginStatusCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 670843851E2B41A600C12C60 /* ScottOriginStatusCell.xib */; };
+		670843881E2B69BD00C12C60 /* ScottUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843871E2B69BD00C12C60 /* ScottUser.swift */; };
+		6708438A1E2B6E2D00C12C60 /* ScottStatusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843891E2B6E2D00C12C60 /* ScottStatusViewModel.swift */; };
+		6708438C1E2B7E0B00C12C60 /* UIImageView+WebImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708438B1E2B7E0B00C12C60 /* UIImageView+WebImage.swift */; };
+		6708438E1E2B812200C12C60 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6708438D1E2B812200C12C60 /* UIImage+Extensions.swift */; };
+		670843911E2B870D00C12C60 /* UIScreen+ScottExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 670843901E2B870D00C12C60 /* UIScreen+ScottExtension.m */; };
+		670843931E2B8D7800C12C60 /* ScottStatusToolBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843921E2B8D7800C12C60 /* ScottStatusToolBar.swift */; };
+		670843951E2B978700C12C60 /* ScottStatusPicView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843941E2B978700C12C60 /* ScottStatusPicView.swift */; };
+		670843971E2B9AFE00C12C60 /* ScottStatusPicture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 670843961E2B9AFE00C12C60 /* ScottStatusPicture.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2039317833682ECF0E925BEF /* Pods_ScottWeibo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScottWeibo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2202CE8F1E270D1D00203366 /* ScottVisitorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottVisitorView.swift; sourceTree = "<group>"; };
+		2202CE941E27332900203366 /* ScottConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottConst.swift; sourceTree = "<group>"; };
+		2202CE961E274CA800203366 /* ScottOAuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottOAuthViewController.swift; sourceTree = "<group>"; };
+		2202CE981E2753FC00203366 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
+		2202CE9B1E276EB500203366 /* ScottNetwrokManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottNetwrokManager.swift; sourceTree = "<group>"; };
+		2202CE9D1E2777D900203366 /* ScottNetwrokManager+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ScottNetwrokManager+Extension.swift"; sourceTree = "<group>"; };
+		2202CE9F1E27875600203366 /* ScottStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatus.swift; sourceTree = "<group>"; };
+		22226ABF1E360B920098FFBB /* ScottEmoticonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonCell.swift; sourceTree = "<group>"; };
+		22226AC01E360B920098FFBB /* ScottEmoticonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonLayout.swift; sourceTree = "<group>"; };
+		2263BB251E25DDB000F1236D /* ScottWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScottWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2263BB281E25DDB000F1236D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		2263BB341E25DDB000F1236D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2263BB3C1E25DE4E00F1236D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2263BB4A1E25DFFC00F1236D /* ScottTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottTabBarController.swift; sourceTree = "<group>"; };
+		2263BB4C1E25E00F00F1236D /* ScottNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottNavigationController.swift; sourceTree = "<group>"; };
+		2263BB4E1E25E02500F1236D /* ScottBaseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottBaseController.swift; sourceTree = "<group>"; };
+		2263BB501E25E04000F1236D /* ScottDiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottDiscoverController.swift; sourceTree = "<group>"; };
+		2263BB521E25E04D00F1236D /* ScottHomeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottHomeController.swift; sourceTree = "<group>"; };
+		2263BB541E25E05900F1236D /* ScottMessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottMessageController.swift; sourceTree = "<group>"; };
+		2263BB561E25E06800F1236D /* ScottProfileController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottProfileController.swift; sourceTree = "<group>"; };
+		2263BB5B1E25FBF500F1236D /* Bundle+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extensions.swift"; sourceTree = "<group>"; };
+		2263BB5D1E26130300F1236D /* ScottWeibo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "ScottWeibo-Bridging-Header.h"; path = "Class/Tools/Category/ScottWeibo-Bridging-Header.h"; sourceTree = "<group>"; };
+		2263BB6D1E26130300F1236D /* UIButton+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+ScottExtension.h"; sourceTree = "<group>"; };
+		2263BB6E1E26130300F1236D /* UIButton+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+ScottExtension.m"; sourceTree = "<group>"; };
+		2263BB6F1E26130300F1236D /* UIColor+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+ScottExtension.h"; sourceTree = "<group>"; };
+		2263BB701E26130300F1236D /* UIColor+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ScottExtension.m"; sourceTree = "<group>"; };
+		2263BB731E26130300F1236D /* UIImage+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ScottExtension.h"; sourceTree = "<group>"; };
+		2263BB741E26130300F1236D /* UIImage+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ScottExtension.m"; sourceTree = "<group>"; };
+		2263BB771E26130300F1236D /* UILabel+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+ScottExtension.h"; sourceTree = "<group>"; };
+		2263BB781E26130300F1236D /* UILabel+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+ScottExtension.m"; sourceTree = "<group>"; };
+		2263BB7B1E26130300F1236D /* UIView+ScottFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+ScottFrame.h"; sourceTree = "<group>"; };
+		2263BB7C1E26130300F1236D /* UIView+ScottFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+ScottFrame.m"; sourceTree = "<group>"; };
+		2263BB901E26134A00F1236D /* ScottAdditions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ScottAdditions.h; sourceTree = "<group>"; };
+		2263BB961E262F5900F1236D /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		2263BB981E26342400F1236D /* ScottTestController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottTestController.swift; sourceTree = "<group>"; };
+		2265EAAF1E35FB000069A4A5 /* ScottEmoticonInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonInputView.swift; sourceTree = "<group>"; };
+		2265EAB01E35FB000069A4A5 /* ScottEmoticonInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottEmoticonInputView.xib; sourceTree = "<group>"; };
+		2265EAB11E35FB000069A4A5 /* ScottEmoticonToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonToolBar.swift; sourceTree = "<group>"; };
+		228FC1D81E34482100147D97 /* ScottEmoticon.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticon.swift; sourceTree = "<group>"; };
+		228FC1D91E34482100147D97 /* ScottEmoticonPackage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonPackage.swift; sourceTree = "<group>"; };
+		228FC1DA1E34482100147D97 /* ScottEmoticon.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ScottEmoticon.bundle; sourceTree = "<group>"; };
+		228FC1DB1E34482100147D97 /* ScottEmoticonManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottEmoticonManager.swift; sourceTree = "<group>"; };
+		228FC1E11E34588600147D97 /* ScottLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottLabel.swift; sourceTree = "<group>"; };
+		228FC1E61E3493AA00147D97 /* ScottWebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottWebViewController.swift; sourceTree = "<group>"; };
+		2295F73F1E2F0159009ADC61 /* ScottComposeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottComposeController.swift; sourceTree = "<group>"; };
+		2295F7401E2F0159009ADC61 /* ScottComposeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottComposeController.xib; sourceTree = "<group>"; };
+		2295F7441E2F01C4009ADC61 /* ScottComposeTypeButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottComposeTypeButton.swift; sourceTree = "<group>"; };
+		2295F7451E2F01C4009ADC61 /* ScottComposeTypeButton.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottComposeTypeButton.xib; sourceTree = "<group>"; };
+		2295F7461E2F01C4009ADC61 /* ScottComposeTypeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottComposeTypeView.swift; sourceTree = "<group>"; };
+		2295F7471E2F01C4009ADC61 /* ScottComposeTypeView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottComposeTypeView.xib; sourceTree = "<group>"; };
+		2295F74C1E2F1136009ADC61 /* ScottComposeTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottComposeTextView.swift; sourceTree = "<group>"; };
+		22966BB91E2DBAF8003403D2 /* ScottRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottRefreshView.swift; sourceTree = "<group>"; };
+		22966BBA1E2DBAF8003403D2 /* ScottRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottRefreshView.xib; sourceTree = "<group>"; };
+		22966BCF1E2DBF85003403D2 /* ScottCTRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottCTRefreshView.swift; sourceTree = "<group>"; };
+		22966BD11E2DBF8E003403D2 /* ScottCTRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottCTRefreshView.xib; sourceTree = "<group>"; };
+		22A6CCAB1E2C60B500880566 /* ScottRetweetStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottRetweetStatusCell.xib; sourceTree = "<group>"; };
+		22B03FEB1E30B5E7001E33C4 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		22B03FED1E30C85C001E33C4 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		22B663301E28605000A33580 /* ScottUserAccount.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottUserAccount.swift; sourceTree = "<group>"; };
+		22B663321E2865B500A33580 /* NSString+ScottPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+ScottPath.h"; sourceTree = "<group>"; };
+		22B663331E2865B500A33580 /* NSString+ScottPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ScottPath.m"; sourceTree = "<group>"; };
+		22B663351E28757900A33580 /* ScottNewFeatureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottNewFeatureView.swift; sourceTree = "<group>"; };
+		22B663371E28758900A33580 /* ScottNewFeatureView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottNewFeatureView.xib; sourceTree = "<group>"; };
+		22B663391E28759D00A33580 /* ScottWelcomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottWelcomView.swift; sourceTree = "<group>"; };
+		22B6633B1E2875A900A33580 /* ScottWelcomView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottWelcomView.xib; sourceTree = "<group>"; };
+		22B6633D1E28818100A33580 /* ScottStatusListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusListViewModel.swift; sourceTree = "<group>"; };
+		22B663411E28C55D00A33580 /* ScottTitleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottTitleButton.swift; sourceTree = "<group>"; };
+		22E152A81E2CBE37004E0042 /* ScottRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottRefreshControl.swift; sourceTree = "<group>"; };
+		36AFC404DAD0F8091143EB0A /* Pods-ScottWeibo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScottWeibo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScottWeibo/Pods-ScottWeibo.release.xcconfig"; sourceTree = "<group>"; };
+		670843831E2B419100C12C60 /* ScottStatusCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusCell.swift; sourceTree = "<group>"; };
+		670843851E2B41A600C12C60 /* ScottOriginStatusCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ScottOriginStatusCell.xib; sourceTree = "<group>"; };
+		670843871E2B69BD00C12C60 /* ScottUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottUser.swift; sourceTree = "<group>"; };
+		670843891E2B6E2D00C12C60 /* ScottStatusViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusViewModel.swift; sourceTree = "<group>"; };
+		6708438B1E2B7E0B00C12C60 /* UIImageView+WebImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+WebImage.swift"; sourceTree = "<group>"; };
+		6708438D1E2B812200C12C60 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		6708438F1E2B870D00C12C60 /* UIScreen+ScottExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+ScottExtension.h"; sourceTree = "<group>"; };
+		670843901E2B870D00C12C60 /* UIScreen+ScottExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+ScottExtension.m"; sourceTree = "<group>"; };
+		670843921E2B8D7800C12C60 /* ScottStatusToolBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusToolBar.swift; sourceTree = "<group>"; };
+		670843941E2B978700C12C60 /* ScottStatusPicView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusPicView.swift; sourceTree = "<group>"; };
+		670843961E2B9AFE00C12C60 /* ScottStatusPicture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScottStatusPicture.swift; sourceTree = "<group>"; };
+		79D01927F8837ECD95816DB6 /* Pods-ScottWeibo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScottWeibo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScottWeibo/Pods-ScottWeibo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2263BB221E25DDB000F1236D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3137A1581A57F0BC35C3282F /* Pods_ScottWeibo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2202CE8E1E270C4400203366 /* 主要控制器 */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE981E2753FC00203366 /* main.json */,
+				2263BB4A1E25DFFC00F1236D /* ScottTabBarController.swift */,
+				2263BB4C1E25E00F00F1236D /* ScottNavigationController.swift */,
+			);
+			name = "主要控制器";
+			sourceTree = "<group>";
+		};
+		2202CE911E27324F00203366 /* NewFeature(新特性) */ = {
+			isa = PBXGroup;
+			children = (
+				22B663351E28757900A33580 /* ScottNewFeatureView.swift */,
+				22B663371E28758900A33580 /* ScottNewFeatureView.xib */,
+				22B663391E28759D00A33580 /* ScottWelcomView.swift */,
+				22B6633B1E2875A900A33580 /* ScottWelcomView.xib */,
+			);
+			name = "NewFeature(新特性)";
+			path = NewFeature;
+			sourceTree = "<group>";
+		};
+		2202CE921E27324F00203366 /* OAuth(登录) */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE961E274CA800203366 /* ScottOAuthViewController.swift */,
+				22B663301E28605000A33580 /* ScottUserAccount.swift */,
+			);
+			name = "OAuth(登录)";
+			path = OAuth;
+			sourceTree = "<group>";
+		};
+		2202CE931E27331C00203366 /* Const */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE941E27332900203366 /* ScottConst.swift */,
+			);
+			path = Const;
+			sourceTree = "<group>";
+		};
+		2202CE9A1E276B5000203366 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE9B1E276EB500203366 /* ScottNetwrokManager.swift */,
+				2202CE9D1E2777D900203366 /* ScottNetwrokManager+Extension.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2263BB1C1E25DDB000F1236D = {
+			isa = PBXGroup;
+			children = (
+				2263BB271E25DDB000F1236D /* ScottWeibo */,
+				2263BB261E25DDB000F1236D /* Products */,
+				DE70BD6935AA5FC4ACC98703 /* Pods */,
+				34F71AE1C616BFD3D1432E70 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2263BB261E25DDB000F1236D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB251E25DDB000F1236D /* ScottWeibo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2263BB271E25DDB000F1236D /* ScottWeibo */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB401E25DF1500F1236D /* Class */,
+				2263BB281E25DDB000F1236D /* AppDelegate.swift */,
+				2263BB5D1E26130300F1236D /* ScottWeibo-Bridging-Header.h */,
+				2263BB3C1E25DE4E00F1236D /* Assets.xcassets */,
+				2263BB341E25DDB000F1236D /* Info.plist */,
+			);
+			path = ScottWeibo;
+			sourceTree = "<group>";
+		};
+		2263BB401E25DF1500F1236D /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB411E25DF1500F1236D /* Model(模型) */,
+				2263BB421E25DF1500F1236D /* Tools(工具) */,
+				2263BB431E25DF1500F1236D /* View(视图和控制器) */,
+				2263BB491E25DF1500F1236D /* ViewModel(模型视图) */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		2263BB411E25DF1500F1236D /* Model(模型) */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE9F1E27875600203366 /* ScottStatus.swift */,
+				670843871E2B69BD00C12C60 /* ScottUser.swift */,
+				670843961E2B9AFE00C12C60 /* ScottStatusPicture.swift */,
+			);
+			name = "Model(模型)";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2263BB421E25DF1500F1236D /* Tools(工具) */ = {
+			isa = PBXGroup;
+			children = (
+				228FC1E01E34587900147D97 /* ScottLabel */,
+				228FC1D61E34482100147D97 /* ScottEmoticon */,
+				22E152A71E2CBE1E004E0042 /* ScottRefresh */,
+				2202CE9A1E276B5000203366 /* Network */,
+				2202CE931E27331C00203366 /* Const */,
+				2263BB581E25FBB100F1236D /* Category */,
+				2263BB591E25FBB100F1236D /* Extensions */,
+			);
+			name = "Tools(工具)";
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		2263BB431E25DF1500F1236D /* View(视图和控制器) */ = {
+			isa = PBXGroup;
+			children = (
+				22966BE91E2E0015003403D2 /* Compose(撰写微博) */,
+				2202CE911E27324F00203366 /* NewFeature(新特性) */,
+				2202CE921E27324F00203366 /* OAuth(登录) */,
+				2263BB441E25DF1500F1236D /* Discover(发现) */,
+				2263BB451E25DF1500F1236D /* Home(首页) */,
+				2263BB461E25DF1500F1236D /* Main(主要) */,
+				2263BB471E25DF1500F1236D /* Message(消息) */,
+				2263BB481E25DF1500F1236D /* Profile(我) */,
+			);
+			name = "View(视图和控制器)";
+			path = View;
+			sourceTree = "<group>";
+		};
+		2263BB441E25DF1500F1236D /* Discover(发现) */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB501E25E04000F1236D /* ScottDiscoverController.swift */,
+			);
+			name = "Discover(发现)";
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		2263BB451E25DF1500F1236D /* Home(首页) */ = {
+			isa = PBXGroup;
+			children = (
+				670843821E2B414E00C12C60 /* StatusCell */,
+				22B663401E28C53800A33580 /* TitleButton */,
+				2263BB521E25E04D00F1236D /* ScottHomeController.swift */,
+				228FC1E61E3493AA00147D97 /* ScottWebViewController.swift */,
+			);
+			name = "Home(首页)";
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2263BB461E25DF1500F1236D /* Main(主要) */ = {
+			isa = PBXGroup;
+			children = (
+				2202CE8E1E270C4400203366 /* 主要控制器 */,
+				2263BB4E1E25E02500F1236D /* ScottBaseController.swift */,
+				2202CE8F1E270D1D00203366 /* ScottVisitorView.swift */,
+				2263BB981E26342400F1236D /* ScottTestController.swift */,
+			);
+			name = "Main(主要)";
+			path = Main;
+			sourceTree = "<group>";
+		};
+		2263BB471E25DF1500F1236D /* Message(消息) */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB541E25E05900F1236D /* ScottMessageController.swift */,
+			);
+			name = "Message(消息)";
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2263BB481E25DF1500F1236D /* Profile(我) */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB561E25E06800F1236D /* ScottProfileController.swift */,
+			);
+			name = "Profile(我)";
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		2263BB491E25DF1500F1236D /* ViewModel(模型视图) */ = {
+			isa = PBXGroup;
+			children = (
+				22B6633D1E28818100A33580 /* ScottStatusListViewModel.swift */,
+				670843891E2B6E2D00C12C60 /* ScottStatusViewModel.swift */,
+			);
+			name = "ViewModel(模型视图)";
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2263BB581E25FBB100F1236D /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				22B663321E2865B500A33580 /* NSString+ScottPath.h */,
+				22B663331E2865B500A33580 /* NSString+ScottPath.m */,
+				2263BB6D1E26130300F1236D /* UIButton+ScottExtension.h */,
+				2263BB6E1E26130300F1236D /* UIButton+ScottExtension.m */,
+				2263BB6F1E26130300F1236D /* UIColor+ScottExtension.h */,
+				2263BB701E26130300F1236D /* UIColor+ScottExtension.m */,
+				2263BB731E26130300F1236D /* UIImage+ScottExtension.h */,
+				2263BB741E26130300F1236D /* UIImage+ScottExtension.m */,
+				6708438F1E2B870D00C12C60 /* UIScreen+ScottExtension.h */,
+				670843901E2B870D00C12C60 /* UIScreen+ScottExtension.m */,
+				2263BB771E26130300F1236D /* UILabel+ScottExtension.h */,
+				2263BB781E26130300F1236D /* UILabel+ScottExtension.m */,
+				2263BB7B1E26130300F1236D /* UIView+ScottFrame.h */,
+				2263BB7C1E26130300F1236D /* UIView+ScottFrame.m */,
+				2263BB901E26134A00F1236D /* ScottAdditions.h */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		2263BB591E25FBB100F1236D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2263BB5B1E25FBF500F1236D /* Bundle+Extensions.swift */,
+				2263BB961E262F5900F1236D /* UIBarButtonItem+Extension.swift */,
+				6708438B1E2B7E0B00C12C60 /* UIImageView+WebImage.swift */,
+				6708438D1E2B812200C12C60 /* UIImage+Extensions.swift */,
+				22B03FEB1E30B5E7001E33C4 /* Date+Extensions.swift */,
+				22B03FED1E30C85C001E33C4 /* String+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		2265EAAE1E35FB000069A4A5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				22226ABF1E360B920098FFBB /* ScottEmoticonCell.swift */,
+				22226AC01E360B920098FFBB /* ScottEmoticonLayout.swift */,
+				2265EAAF1E35FB000069A4A5 /* ScottEmoticonInputView.swift */,
+				2265EAB01E35FB000069A4A5 /* ScottEmoticonInputView.xib */,
+				2265EAB11E35FB000069A4A5 /* ScottEmoticonToolBar.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		228FC1D61E34482100147D97 /* ScottEmoticon */ = {
+			isa = PBXGroup;
+			children = (
+				2265EAAE1E35FB000069A4A5 /* View */,
+				228FC1D71E34482100147D97 /* Model */,
+				228FC1DA1E34482100147D97 /* ScottEmoticon.bundle */,
+				228FC1DB1E34482100147D97 /* ScottEmoticonManager.swift */,
+			);
+			path = ScottEmoticon;
+			sourceTree = "<group>";
+		};
+		228FC1D71E34482100147D97 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				228FC1D81E34482100147D97 /* ScottEmoticon.swift */,
+				228FC1D91E34482100147D97 /* ScottEmoticonPackage.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		228FC1E01E34587900147D97 /* ScottLabel */ = {
+			isa = PBXGroup;
+			children = (
+				228FC1E11E34588600147D97 /* ScottLabel.swift */,
+			);
+			path = ScottLabel;
+			sourceTree = "<group>";
+		};
+		2295F7431E2F0194009ADC61 /* ComposeTypeView(撰写类型) */ = {
+			isa = PBXGroup;
+			children = (
+				2295F7441E2F01C4009ADC61 /* ScottComposeTypeButton.swift */,
+				2295F7451E2F01C4009ADC61 /* ScottComposeTypeButton.xib */,
+				2295F7461E2F01C4009ADC61 /* ScottComposeTypeView.swift */,
+				2295F7471E2F01C4009ADC61 /* ScottComposeTypeView.xib */,
+			);
+			name = "ComposeTypeView(撰写类型)";
+			path = ComposeTypeView;
+			sourceTree = "<group>";
+		};
+		22966BE91E2E0015003403D2 /* Compose(撰写微博) */ = {
+			isa = PBXGroup;
+			children = (
+				2295F7431E2F0194009ADC61 /* ComposeTypeView(撰写类型) */,
+				2295F73F1E2F0159009ADC61 /* ScottComposeController.swift */,
+				2295F7401E2F0159009ADC61 /* ScottComposeController.xib */,
+				2295F74C1E2F1136009ADC61 /* ScottComposeTextView.swift */,
+			);
+			name = "Compose(撰写微博)";
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		22B663401E28C53800A33580 /* TitleButton */ = {
+			isa = PBXGroup;
+			children = (
+				22B663411E28C55D00A33580 /* ScottTitleButton.swift */,
+			);
+			path = TitleButton;
+			sourceTree = "<group>";
+		};
+		22E152A71E2CBE1E004E0042 /* ScottRefresh */ = {
+			isa = PBXGroup;
+			children = (
+				22E152A81E2CBE37004E0042 /* ScottRefreshControl.swift */,
+				22966BB91E2DBAF8003403D2 /* ScottRefreshView.swift */,
+				22966BBA1E2DBAF8003403D2 /* ScottRefreshView.xib */,
+				22966BCF1E2DBF85003403D2 /* ScottCTRefreshView.swift */,
+				22966BD11E2DBF8E003403D2 /* ScottCTRefreshView.xib */,
+			);
+			path = ScottRefresh;
+			sourceTree = "<group>";
+		};
+		34F71AE1C616BFD3D1432E70 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2039317833682ECF0E925BEF /* Pods_ScottWeibo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		670843821E2B414E00C12C60 /* StatusCell */ = {
+			isa = PBXGroup;
+			children = (
+				670843831E2B419100C12C60 /* ScottStatusCell.swift */,
+				670843851E2B41A600C12C60 /* ScottOriginStatusCell.xib */,
+				22A6CCAB1E2C60B500880566 /* ScottRetweetStatusCell.xib */,
+				670843921E2B8D7800C12C60 /* ScottStatusToolBar.swift */,
+				670843941E2B978700C12C60 /* ScottStatusPicView.swift */,
+			);
+			path = StatusCell;
+			sourceTree = "<group>";
+		};
+		DE70BD6935AA5FC4ACC98703 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79D01927F8837ECD95816DB6 /* Pods-ScottWeibo.debug.xcconfig */,
+				36AFC404DAD0F8091143EB0A /* Pods-ScottWeibo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2263BB241E25DDB000F1236D /* ScottWeibo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2263BB371E25DDB000F1236D /* Build configuration list for PBXNativeTarget "ScottWeibo" */;
+			buildPhases = (
+				F44C7F9F4ABE9D1990901A6F /* [CP] Check Pods Manifest.lock */,
+				2263BB211E25DDB000F1236D /* Sources */,
+				2263BB221E25DDB000F1236D /* Frameworks */,
+				2263BB231E25DDB000F1236D /* Resources */,
+				89AB5192C42CA63071BA9C50 /* [CP] Embed Pods Frameworks */,
+				BCA165A34A252CA128B165B1 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScottWeibo;
+			productName = ScottWeibo;
+			productReference = 2263BB251E25DDB000F1236D /* ScottWeibo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2263BB1D1E25DDB000F1236D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Scott;
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = Scott;
+				TargetAttributes = {
+					2263BB241E25DDB000F1236D = {
+						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = YJJPK3UMS6;
+						LastSwiftMigration = 0810;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2263BB201E25DDB000F1236D /* Build configuration list for PBXProject "ScottWeibo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2263BB1C1E25DDB000F1236D;
+			productRefGroup = 2263BB261E25DDB000F1236D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2263BB241E25DDB000F1236D /* ScottWeibo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2263BB231E25DDB000F1236D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2295F7491E2F01C4009ADC61 /* ScottComposeTypeButton.xib in Resources */,
+				2265EAB31E35FB000069A4A5 /* ScottEmoticonInputView.xib in Resources */,
+				2295F74B1E2F01C4009ADC61 /* ScottComposeTypeView.xib in Resources */,
+				2202CE991E2753FC00203366 /* main.json in Resources */,
+				2263BB3D1E25DE4E00F1236D /* Assets.xcassets in Resources */,
+				670843861E2B41A600C12C60 /* ScottOriginStatusCell.xib in Resources */,
+				2295F7421E2F0159009ADC61 /* ScottComposeController.xib in Resources */,
+				22966BBC1E2DBAF8003403D2 /* ScottRefreshView.xib in Resources */,
+				22B663381E28758900A33580 /* ScottNewFeatureView.xib in Resources */,
+				22966BD21E2DBF8E003403D2 /* ScottCTRefreshView.xib in Resources */,
+				22A6CCAC1E2C60B500880566 /* ScottRetweetStatusCell.xib in Resources */,
+				22B6633C1E2875A900A33580 /* ScottWelcomView.xib in Resources */,
+				228FC1DE1E34482100147D97 /* ScottEmoticon.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		89AB5192C42CA63071BA9C50 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScottWeibo/Pods-ScottWeibo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCA165A34A252CA128B165B1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScottWeibo/Pods-ScottWeibo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F44C7F9F4ABE9D1990901A6F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2263BB211E25DDB000F1236D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2295F74D1E2F1136009ADC61 /* ScottComposeTextView.swift in Sources */,
+				2263BB871E26130300F1236D /* UIButton+ScottExtension.m in Sources */,
+				2295F7411E2F0159009ADC61 /* ScottComposeController.swift in Sources */,
+				670843911E2B870D00C12C60 /* UIScreen+ScottExtension.m in Sources */,
+				22B663421E28C55D00A33580 /* ScottTitleButton.swift in Sources */,
+				2265EAB21E35FB000069A4A5 /* ScottEmoticonInputView.swift in Sources */,
+				2263BB531E25E04D00F1236D /* ScottHomeController.swift in Sources */,
+				2263BB8E1E26130300F1236D /* UIView+ScottFrame.m in Sources */,
+				2202CEA01E27875600203366 /* ScottStatus.swift in Sources */,
+				2263BB8A1E26130300F1236D /* UIImage+ScottExtension.m in Sources */,
+				22B663361E28757900A33580 /* ScottNewFeatureView.swift in Sources */,
+				2263BB881E26130300F1236D /* UIColor+ScottExtension.m in Sources */,
+				670843841E2B419100C12C60 /* ScottStatusCell.swift in Sources */,
+				22B6633A1E28759D00A33580 /* ScottWelcomView.swift in Sources */,
+				670843951E2B978700C12C60 /* ScottStatusPicView.swift in Sources */,
+				2202CE951E27332900203366 /* ScottConst.swift in Sources */,
+				22B663341E2865B500A33580 /* NSString+ScottPath.m in Sources */,
+				2265EAB41E35FB000069A4A5 /* ScottEmoticonToolBar.swift in Sources */,
+				2263BB571E25E06800F1236D /* ScottProfileController.swift in Sources */,
+				22966BBB1E2DBAF8003403D2 /* ScottRefreshView.swift in Sources */,
+				2263BB4F1E25E02500F1236D /* ScottBaseController.swift in Sources */,
+				228FC1DF1E34482100147D97 /* ScottEmoticonManager.swift in Sources */,
+				228FC1E21E34588600147D97 /* ScottLabel.swift in Sources */,
+				6708438A1E2B6E2D00C12C60 /* ScottStatusViewModel.swift in Sources */,
+				2263BB5C1E25FBF500F1236D /* Bundle+Extensions.swift in Sources */,
+				670843931E2B8D7800C12C60 /* ScottStatusToolBar.swift in Sources */,
+				2202CE9C1E276EB500203366 /* ScottNetwrokManager.swift in Sources */,
+				22226AC21E360B920098FFBB /* ScottEmoticonLayout.swift in Sources */,
+				22B6633E1E28818100A33580 /* ScottStatusListViewModel.swift in Sources */,
+				22E152A91E2CBE37004E0042 /* ScottRefreshControl.swift in Sources */,
+				6708438C1E2B7E0B00C12C60 /* UIImageView+WebImage.swift in Sources */,
+				2263BB991E26342400F1236D /* ScottTestController.swift in Sources */,
+				22966BD01E2DBF85003403D2 /* ScottCTRefreshView.swift in Sources */,
+				228FC1DD1E34482100147D97 /* ScottEmoticonPackage.swift in Sources */,
+				2202CE901E270D1D00203366 /* ScottVisitorView.swift in Sources */,
+				228FC1DC1E34482100147D97 /* ScottEmoticon.swift in Sources */,
+				2263BB971E262F5900F1236D /* UIBarButtonItem+Extension.swift in Sources */,
+				2263BB8C1E26130300F1236D /* UILabel+ScottExtension.m in Sources */,
+				670843971E2B9AFE00C12C60 /* ScottStatusPicture.swift in Sources */,
+				2263BB551E25E05900F1236D /* ScottMessageController.swift in Sources */,
+				2295F7481E2F01C4009ADC61 /* ScottComposeTypeButton.swift in Sources */,
+				2263BB4D1E25E00F00F1236D /* ScottNavigationController.swift in Sources */,
+				2295F74A1E2F01C4009ADC61 /* ScottComposeTypeView.swift in Sources */,
+				2202CE9E1E2777D900203366 /* ScottNetwrokManager+Extension.swift in Sources */,
+				2263BB291E25DDB000F1236D /* AppDelegate.swift in Sources */,
+				22B03FEC1E30B5E7001E33C4 /* Date+Extensions.swift in Sources */,
+				2263BB4B1E25DFFC00F1236D /* ScottTabBarController.swift in Sources */,
+				2202CE971E274CA800203366 /* ScottOAuthViewController.swift in Sources */,
+				670843881E2B69BD00C12C60 /* ScottUser.swift in Sources */,
+				22B03FEE1E30C85C001E33C4 /* String+Extensions.swift in Sources */,
+				228FC1E71E3493AA00147D97 /* ScottWebViewController.swift in Sources */,
+				6708438E1E2B812200C12C60 /* UIImage+Extensions.swift in Sources */,
+				22226AC11E360B920098FFBB /* ScottEmoticonCell.swift in Sources */,
+				22B663311E28605000A33580 /* ScottUserAccount.swift in Sources */,
+				2263BB511E25E04000F1236D /* ScottDiscoverController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2263BB351E25DDB000F1236D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		2263BB361E25DDB000F1236D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2263BB381E25DDB000F1236D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79D01927F8837ECD95816DB6 /* Pods-ScottWeibo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = YJJPK3UMS6;
+				INFOPLIST_FILE = ScottWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scott.com.ScottWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScottWeibo/Class/Tools/Category/ScottWeibo-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		2263BB391E25DDB000F1236D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36AFC404DAD0F8091143EB0A /* Pods-ScottWeibo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_MODULES = YES;
+				DEVELOPMENT_TEAM = YJJPK3UMS6;
+				INFOPLIST_FILE = ScottWeibo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = scott.com.ScottWeibo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScottWeibo/Class/Tools/Category/ScottWeibo-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2263BB201E25DDB000F1236D /* Build configuration list for PBXProject "ScottWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2263BB351E25DDB000F1236D /* Debug */,
+				2263BB361E25DDB000F1236D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2263BB371E25DDB000F1236D /* Build configuration list for PBXNativeTarget "ScottWeibo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2263BB381E25DDB000F1236D /* Debug */,
+				2263BB391E25DDB000F1236D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2263BB1D1E25DDB000F1236D /* Project object */;
+}

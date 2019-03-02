@@ -1,0 +1,14 @@
+platform :ios, '8.0'
+
+target ‘ScottWeibo' do
+use_frameworks!
+
+pod 'AFNetworking', '~> 3.1.0'
+pod 'SDWebImage'
+pod 'YYModel'
+pod 'FMDB'
+pod 'SVProgressHUD'
+pod 'pop'
+pod 'MJRefresh', '~> 3.1.12'
+
+end

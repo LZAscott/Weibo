@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="K7R-Z2-mms" customClass="ScottEmoticonInputView" customModule="TestEmotica" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="253"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UaR-YP-USZ" userLabel="底部工具栏" customClass="ScottEmoticonToolBar" customModule="TestEmotica" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="213" width="375" height="40"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="GfL-kS-Xfn"/>
+                    </constraints>
+                </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="E4G-Vt-i89">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="213"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="ztJ-1g-zXJ" customClass="ScottEmoticonLayout" customModule="TestEmotica" customModuleProvider="target">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                    <connections>
+                        <outlet property="dataSource" destination="K7R-Z2-mms" id="l7G-jH-3gx"/>
+                    </connections>
+                </collectionView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="E4G-Vt-i89" firstAttribute="leading" secondItem="K7R-Z2-mms" secondAttribute="leading" id="CUv-xA-6GV"/>
+                <constraint firstAttribute="trailing" secondItem="E4G-Vt-i89" secondAttribute="trailing" id="DL4-6i-C3M"/>
+                <constraint firstItem="UaR-YP-USZ" firstAttribute="top" secondItem="E4G-Vt-i89" secondAttribute="bottom" id="Mnh-8T-a1f"/>
+                <constraint firstAttribute="bottom" secondItem="UaR-YP-USZ" secondAttribute="bottom" id="UBv-n9-USM"/>
+                <constraint firstItem="UaR-YP-USZ" firstAttribute="leading" secondItem="K7R-Z2-mms" secondAttribute="leading" id="abM-EK-vfF"/>
+                <constraint firstItem="E4G-Vt-i89" firstAttribute="top" secondItem="K7R-Z2-mms" secondAttribute="top" id="oAd-cj-K3b"/>
+                <constraint firstAttribute="trailing" secondItem="UaR-YP-USZ" secondAttribute="trailing" id="saM-Mz-IgI"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="collectionView" destination="E4G-Vt-i89" id="Dpq-YU-sNe"/>
+                <outlet property="toolBar" destination="UaR-YP-USZ" id="L07-SA-eGR"/>
+            </connections>
+            <point key="canvasLocation" x="-170.5" y="177.5"/>
+        </view>
+    </objects>
+</document>

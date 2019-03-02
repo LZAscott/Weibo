@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ScottComposeTypeButton" customModule="ScottWeibo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="center" image="tabbar_compose_friend" translatesAutoresizingMaskIntoConstraints="NO" id="IZa-vC-yPb">
+                    <rect key="frame" x="14.5" y="0.0" width="71" height="71"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="试一试" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9uf-Zk-jUm">
+                    <rect key="frame" x="28.5" y="83" width="43" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="9uf-Zk-jUm" secondAttribute="bottom" id="4bH-iv-uTH"/>
+                <constraint firstItem="IZa-vC-yPb" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="T3f-74-LSG"/>
+                <constraint firstItem="IZa-vC-yPb" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Wy2-JJ-oaY"/>
+                <constraint firstItem="9uf-Zk-jUm" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hBX-M9-BiF"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="imageView" destination="IZa-vC-yPb" id="UeG-qp-eBf"/>
+                <outlet property="titleLabel" destination="9uf-Zk-jUm" id="6Uf-dh-f2d"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="tabbar_compose_friend" width="71" height="71"/>
+    </resources>
+</document>
